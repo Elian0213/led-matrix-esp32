@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import "component/alert-box.css";
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 !important;
+    background-color: #1a1a1c;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color:#1f1f1f;
+    border-radius: 5px;
+    padding: 7px 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Container */
+.container {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+
+/* LED Board */
+
+.led-board {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+
+    background-color: black;
+}
+
+.led-board button {
+    outline: none;
+    background-color: black;
+    border: 0;
+    color: white;
+
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.led-board .active {
+    color: red;
+}
+
+
+button:focus, button:active {
+    outline: none;
+}
+
+
+/* Reset button */
+.reset-btn {
+    position: absolute;
+
+    bottom: -25px;
+    right: -25px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 100%;
+    border: 0;
+    color: white;
+    background-color: #d950c4;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar button {
+    width: 20px;
+    height: 20px;
+    font-size: 8px;
+    position: absolute;
+    top: -1px;
+    right: -3px;
+    border-radius: 100%;
+    border: 0;
+    color: white;
+    background-color: #3272a5;
+    cursor: pointer;
+    margin-left: 15px;
+}

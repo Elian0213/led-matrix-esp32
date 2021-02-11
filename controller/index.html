@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="assets/led.png" rel="icon">
+
+    <script src="js/script.js" defer></script>
+    <script src="js/calculateByte.js" defer></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>LED Controller</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="top-bar">
+                <h3>LED Board</h3>
+                <button class="led-code"><i class="fas fa-info"></i></button>
+            </div>
+            <div class="led-board"></div>
+            <button class="reset-btn"><i class="fas fa-redo"></i></button>
+        </div>
+    </main>
+
+    <div class="alert-box">
+        <span id="status">Connecting...</span>
+    </div>
+</body>
+</html>
